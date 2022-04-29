@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ActivitySubjectInfo"
+    android:background="@color/bgc">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/headding"
+        android:textStyle="bold"
+        android:text="Subject Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Subject Title: "
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtSubjectTitle"
+            android:text="Android"
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Credit: "
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtSubjectCredit"
+            android:text="3"
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Time: "
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtSubjectTime"
+            android:text="Android"
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Place: "
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtSubjectPlace"
+            android:text="ddd"
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

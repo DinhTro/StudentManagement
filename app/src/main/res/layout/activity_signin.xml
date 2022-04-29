@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySignin"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+<TextView
+    android:layout_marginTop="130dp"
+    android:layout_gravity="center"
+    android:textSize="40sp"
+    android:textColor="@color/text3"
+    android:textStyle="bold"
+    android:text="Login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:drawableRight="@drawable/ic_baseline_person_24"
+        android:id="@+id/edtUsername"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:drawableRight="@drawable/ic_baseline_security_24"
+        android:id="@+id/edtPassword"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+        android:id="@+id/btnSignin"
+        android:letterSpacing="0.1"
+        android:textColor="@color/white"
+        android:background="@color/purple_800"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+    <Button
+        android:id="@+id/btnSignup"
+        android:letterSpacing="0.1"
+        android:textColor="@color/white"
+        android:background="@color/purple_800"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="Signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+
+</LinearLayout>

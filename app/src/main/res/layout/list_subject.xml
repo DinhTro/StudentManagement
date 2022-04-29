@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSubjectTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textColor="@color/text2"
+            android:textSize="25sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit: "
+                android:textColor="@color/text3"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:id="@+id/tvCredit"
+                android:textSize="20sp"
+                android:text="3"
+                android:textColor="@color/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageButton
+        android:src="@drawable/ic_baseline_subject_24"
+        android:layout_marginTop="25dp"
+        android:id="@+id/subjectInfo"
+        android:background="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></ImageButton>
+
+    <ImageButton
+        android:src="@drawable/ic_baseline_edit_24"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:id="@+id/subjectEdit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></ImageButton>
+
+    <ImageButton
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:id="@+id/subjectDele"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></ImageButton>
+</LinearLayout>

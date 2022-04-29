@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ActivityStudentInfo"
+    android:background="@color/bgc">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/headding"
+        android:textStyle="bold"
+        android:text="Student Info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Name: "
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:text="Android"
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Sex: "
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtSex"
+            android:text="male"
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Code: "
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:text="3"
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Date of birth: "
+            android:textSize="20dp"
+            android:textColor="@color/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtBirthday"
+            android:text="22 22 02"
+            android:textSize="20dp"
+            android:textColor="@color/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAddSubject"
+    android:background="@color/bgc">
+<TextView
+    android:layout_marginTop="80dp"
+    android:textColor="@color/headding"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:text="Add Subject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/editTextSubjectTitle"
+        android:hint="Subject title"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/text3"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/editTextCredit"
+        android:hint="Credit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/text3"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/editTextTime"
+        android:hint="Time"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/text3"></EditText>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/editTextPlace"
+        android:hint="Place"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/text3"></EditText>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnAddSubject"
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/background_button"></Button>
+</LinearLayout>
