@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></EditText>
     <EditText
+        android:inputType="textPassword"
         android:drawableRight="@drawable/ic_baseline_security_24"
         android:id="@+id/edtPassword"
         android:layout_marginTop="10dp"
@@ -39,7 +40,7 @@
         android:background="@color/purple_800"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Signin"
+        android:text="Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></Button>
     <Button
@@ -49,7 +50,7 @@
         android:background="@color/purple_800"
         android:layout_marginTop="15dp"
         android:layout_gravity="center"
-        android:text="Signup"
+        android:text="Register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></Button>
 

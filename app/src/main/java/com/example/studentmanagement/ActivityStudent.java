@@ -37,7 +37,6 @@ public class ActivityStudent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
-
         toolbar = findViewById(R.id.toolbarStudent);
         lvStudent = findViewById(R.id.lvStudent);
 

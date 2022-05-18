@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".ActivitySubjectInfo"
-    android:background="@color/bgc">
+    android:background="@color/white">
 
     <TextView
         android:layout_marginTop="80dp"

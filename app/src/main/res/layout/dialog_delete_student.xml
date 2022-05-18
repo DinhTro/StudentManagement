@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/bgcDialog"
+    android:background="@color/white"
     android:layout_width="350dp"
     android:layout_height="200dp">
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/background_button"
+            android:background="@color/purple_800"
             android:layout_marginRight="15dp"
             android:id="@+id/btnYesDeleStudent"
             android:textColor="@color/white"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"></Button>
 
         <Button
-            android:background="@drawable/background_button"
+            android:background="@color/purple_800"
             android:layout_marginLeft="15dp"
             android:id="@+id/btnNoDeleStudent"
             android:textColor="@color/white"

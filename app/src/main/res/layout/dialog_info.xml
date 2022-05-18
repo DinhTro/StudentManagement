@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/bgcDialog"
+    android:background="@color/white"
     android:layout_width="340dp"
-    android:layout_height="300dp">
+    android:layout_height="150dp">
 
     <TextView
         android:gravity="center"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textColor="@color/headding"
-        android:text="hello"
+        android:text="Hello"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -22,9 +22,10 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:textColor="@color/text"
-        android:text="Dinh tro"
+        android:text="Admin"
         android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName">
     </TextView>
 </LinearLayout>

@@ -35,7 +35,7 @@
         android:id="@+id/btnAuthor"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="Author"
+        android:text="Profile"
         android:textSize="18sp"
         android:layout_width="180dp"
         android:layout_height="wrap_content">
@@ -48,7 +48,7 @@
         android:textSize="18sp"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:text="Exit"
+        android:text="logout"
         android:layout_width="180dp"
         android:layout_height="wrap_content">
     </Button>

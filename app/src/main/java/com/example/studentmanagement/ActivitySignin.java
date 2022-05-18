@@ -53,7 +53,7 @@ public class ActivitySignin extends AppCompatActivity {
 
                         startActivity(intent);
                     } else {
-                        Toast.makeText(ActivitySignin.this, "username or password incorrect", Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(ActivitySignin.this, "username or password incorrect", Toast.LENGTH_SHORT).show();
                     }
                 }
                 cursor.moveToFirst();

@@ -19,7 +19,7 @@ public class ActivityAddStudent extends AppCompatActivity {
     Button btnAddStudent;
     EditText edtStudentName, edtCode, edtBirthday;
     RadioButton rdoMale, rdoFemale;
-    com.example.studentmanagement.database.database database;
+    database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

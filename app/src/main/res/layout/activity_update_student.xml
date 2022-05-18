@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityUpdateStudent"
-    android:background="@color/bgc">
+    android:background="@color/white">
     <TextView
         android:layout_marginTop="80dp"
         android:textColor="@color/headding"
@@ -67,6 +67,7 @@
         android:textColorHint="@color/text3"></EditText>
 
     <EditText
+        android:inputType="date"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:id="@+id/edtUpdateBirthday"
@@ -83,5 +84,5 @@
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_button"></Button>
+        android:background="@color/purple_800"></Button>
 </LinearLayout>

@@ -17,7 +17,7 @@ public class database extends SQLiteOpenHelper {
 
     //Tên database
     private static String DATABASE_NAME = "studentmanagement1";
-//  account
+    //  account
     private static String TABLE_TAIKHOAN = "taikhoan";
     private static String ID_TAI_KHOAN = "idtaikhoan";
     private static String TEN_TAI_KHOAN = "tentaikhoan";
@@ -43,7 +43,7 @@ public class database extends SQLiteOpenHelper {
 
     private Context context;
 
-//    create account and insert data
+    //    create account and insert data
     private String SQLQuery1 = "CREATE TABLE "+ TABLE_TAIKHOAN +" ( "+ID_TAI_KHOAN+" INTEGER PRIMARY KEY AUTOINCREMENT, "
             +TEN_TAI_KHOAN+" TEXT UNIQUE, "
             +MAT_KHAU+" TEXT, "
@@ -56,7 +56,8 @@ public class database extends SQLiteOpenHelper {
             +SUBJECT_TITLE+" TEXT, "
             +CREDITS+" INTEGER, "
             +TIME+" TEXT, "
-            + PLACE+" TEXT) ";
+            + PLACE+" TEXT, "
+            +ID_TAI_KHOAN+") ";
 
 
     //Tạo bảng sinh viên
@@ -84,10 +85,16 @@ public class database extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-//    account
+    //    account
     public Cursor getDataAccount() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_TAIKHOAN, null);
+        return cursor;
+    }
+
+    public Cursor getNameAccount(int idAccount) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_TAIKHOAN+" WHERE "+ID_TAI_KHOAN+"="+idAccount, null);
         return cursor;
     }
 
@@ -107,14 +114,14 @@ public class database extends SQLiteOpenHelper {
         Log.e("add account", "successfully!");
     }
 
-//subject
+    //subject
     //  lấy dữ liêu
     public Cursor getDataSubject() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS, null);
         return cursor;
     }
-//  Thêm
+    //  Thêm
     public void addSubject(Subject subject) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -128,7 +135,7 @@ public class database extends SQLiteOpenHelper {
         db.insert(TABLE_SUBJECTS, null, values);
         db.close();
     }
-//  Sữa
+    //  Sữa
     public boolean updateSubject(Subject subject, int id) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -141,7 +148,7 @@ public class database extends SQLiteOpenHelper {
         db.update(TABLE_SUBJECTS, values, ID_SUBJECTS + " = " + id, null);
         return true;
     }
-//  Xóa
+    //  Xóa
     public int deleteSubject(int i) {
         SQLiteDatabase db = this.getWritableDatabase();
         int remove = db.delete(TABLE_SUBJECTS, ID_SUBJECTS+" = "+i, null);
@@ -156,7 +163,7 @@ public class database extends SQLiteOpenHelper {
     }
 
 
-//    student methods
+    //    student methods
 //Add
     public void addStudent(Student student) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -172,20 +179,20 @@ public class database extends SQLiteOpenHelper {
         db.insert(TABLE_STUDENT, null, values);
         db.close();
     }
-//Get data
+    //Get data
     public Cursor getDataStudent(int idSubject) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+ID_SUBJECTS+"="+idSubject, null);
         return cursor;
     }
-//remove
+    //remove
     public int deleteStudent(int i) {
         SQLiteDatabase db = this.getWritableDatabase();
         int remove = db.delete(TABLE_STUDENT, ID_STUDENT+" = "+i, null);
         return remove;
     }
 
-//    update
+    //    update
     public boolean updateStudent(Student student, int id) {
         SQLiteDatabase db = this.getWritableDatabase();
 

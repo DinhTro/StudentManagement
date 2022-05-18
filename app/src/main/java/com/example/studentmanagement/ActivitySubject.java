@@ -58,20 +58,20 @@ public class ActivitySubject extends AppCompatActivity {
             arlSubject.add(new Subject(id, title, credit, time, place));
         }
 
-            adaptersubject = new adaptersubject(ActivitySubject.this, arlSubject);
-            lvSubject.setAdapter(adaptersubject);
-            cursor.moveToFirst();
-            cursor.close();
+        adaptersubject = new adaptersubject(ActivitySubject.this, arlSubject);
+        lvSubject.setAdapter(adaptersubject);
+        cursor.moveToFirst();
+        cursor.close();
 
-            lvSubject.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    Intent intent = new Intent(ActivitySubject.this, ActivityStudent.class);
-                    int idSubject = arlSubject.get(i).getId();
-                    intent.putExtra("idSubject", idSubject);
-                    startActivity(intent);
-                }
-            });
+        lvSubject.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(ActivitySubject.this, ActivityStudent.class);
+                int idSubject = arlSubject.get(i).getId();
+                intent.putExtra("idSubject", idSubject);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -101,7 +101,7 @@ public class ActivitySubject extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    click back > main
+    //    click back > main
     @Override
     public void onBackPressed() {
         count++;
