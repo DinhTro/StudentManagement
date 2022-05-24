@@ -1,0 +1,4 @@
+user name: admin	
+password: admin
+
+video hướng dẫn sử dụng: https://drive.google.com/file/d/1ngZ5XhubOhJCq-HgEMkisDDpquf1xuh3/view?usp=sharing
